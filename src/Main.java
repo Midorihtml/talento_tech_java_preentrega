@@ -1,11 +1,11 @@
-public class main {
+public class Main {
     public static void main(String[] args) {
-        ProductMenu productMenu = new ProductMenu();
         try {
+            ProductMenu productMenu = new ProductMenu();
             productMenu.show();
             System.out.println("Goodbye!");
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            System.out.println("Error: "+e.getMessage());
         }
     }
 }
